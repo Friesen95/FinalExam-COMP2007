@@ -21,6 +21,12 @@ namespace COMP2006_S2016_FinalExamV2.Controllers
             return View(albums.ToList());
         }
 
+        public ActionResult Browse()
+        {
+            var albums = db.Albums.Include(a => a.Artist).Include(a => a.Genre);
+            return View(albums.ToList());
+        }
+
         // GET: Albums/Details/5
         public ActionResult Details(int? id)
         {

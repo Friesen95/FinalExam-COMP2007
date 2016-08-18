@@ -19,6 +19,10 @@ namespace COMP2006_S2016_FinalExamV2.Controllers
         {
             return View(db.Artists.ToList());
         }
+        public ActionResult Browse()
+        {
+            return View(db.Artists.ToList());
+        }
 
         // GET: Artists/Details/5
         public ActionResult Details(int? id)

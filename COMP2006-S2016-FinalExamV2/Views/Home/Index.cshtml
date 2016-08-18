@@ -1,8 +1,22 @@
-﻿@{
+﻿@using COMP2006_S2016_FinalExamV2.Models
+<!-- This is the home page of our Application.
+    Name: Alex Friesen
+    Date: AUgust 18, 2016
+    App: Final Exam COMP2006
+    -->
+@{
     ViewBag.Title = "Home Page";
 }
 
 <div class="jumbotron">
     <h1>Final Exam</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+</div>
+
+<!--Have three options, Album, Artist and Genre-->
+<div>
+    <ul>
+        <li> @Html.ActionLink("Album","Browse","Albums") </li>
+        <li> @Html.ActionLink("Artist", "Browse", "Artists") </li>
+        <li> @Html.ActionLink("Genre", "Browse", "Genres") </li>
+    </ul>
 </div>
