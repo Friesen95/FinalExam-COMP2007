@@ -15,6 +15,9 @@ namespace COMP2006_S2016_FinalExamV2.Controllers
         private MVCMusicStoreContext db = new MVCMusicStoreContext();
 
         // GET: Albums
+        /*
+         * The controller for everything related to albums, index, edit, delete and browse
+         */
         public ActionResult Index()
         {
             var albums = db.Albums.Include(a => a.Artist).Include(a => a.Genre);

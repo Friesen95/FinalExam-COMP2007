@@ -8,6 +8,9 @@ namespace COMP2006_S2016_FinalExamV2.Controllers
 {
     public class HomeController : Controller
     {
+        /**
+         * This view is responsible to let us navigate around the different views that are in our home folder
+         */
         public ActionResult Index()
         {
             return View();

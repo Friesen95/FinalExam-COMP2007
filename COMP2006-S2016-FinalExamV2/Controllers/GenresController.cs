@@ -15,6 +15,9 @@ namespace COMP2006_S2016_FinalExamV2.Controllers
         private MVCMusicStoreContext db = new MVCMusicStoreContext();
 
         // GET: Genres
+        /*
+         * This controller lets us navigate around the different views that are linked to genres and manipulate the list
+         */
         public ActionResult Index()
         {
             return View(db.Genres.ToList());

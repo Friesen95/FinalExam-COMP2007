@@ -15,6 +15,9 @@ namespace COMP2006_S2016_FinalExamV2.Controllers
         private MVCMusicStoreContext db = new MVCMusicStoreContext();
 
         // GET: Artists
+        /*
+         * The Controller that will help navigate and control anything artist related
+         */
         public ActionResult Index()
         {
             return View(db.Artists.ToList());
